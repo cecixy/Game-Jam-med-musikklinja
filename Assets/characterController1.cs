@@ -13,7 +13,6 @@ public class characterController1 : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
 		rb = GetComponent<Rigidbody> (); 
     }
 
@@ -28,8 +27,6 @@ public class characterController1 : MonoBehaviour
 
         transform.Translate(straffe, 0, translation);
 
-        if (Input.GetKeyDown("escape"))
-            Cursor.lockState = CursorLockMode.None;
     }
 
     void PerformMovement()
