@@ -7,6 +7,6 @@ public class ButtonScript : MonoBehaviour {
 	void OnCollisionEnter(Collision other)
 	{
 		FindObjectOfType<AudioManager> ().Play ("Button"); 
-		FindObjectOfType<AudioManager> ().Play ("Level2.1"); 
+		FindObjectOfType<AudioManager> ().Play ("Level3.1"); 
 	}
 }
