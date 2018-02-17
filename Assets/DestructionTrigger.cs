@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpAndDestroyObject : MonoBehaviour {
-
+public class DestructionTrigger : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider other)
@@ -15,4 +14,6 @@ public class PickUpAndDestroyObject : MonoBehaviour {
 			Destroy (transform.parent.gameObject); 				//DESTROY THE FKING PARENT MAN... ..Now destroy parent
 		}
 	}
+
+
 }

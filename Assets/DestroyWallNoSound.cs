@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpAndDestroyObject : MonoBehaviour {
+public class DestroyWallNoSound : MonoBehaviour {
+
 
 
 
 	void OnTriggerEnter(Collider other)
 	{
-		FindObjectOfType<AudioManager> ().Play ("OhNo"); 
 		Destroy(gameObject);
 		if (transform.parent != null) 
 		{
