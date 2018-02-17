@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour {
 
+
+
 	void OnCollisionEnter(Collision other)
 	{
 		FindObjectOfType<AudioManager> ().Play ("Button"); 
-		FindObjectOfType<AudioManager> ().Play ("Level3.1"); 
+		GetComponent<AudioSource> ().Play (); 
 	}
 }
