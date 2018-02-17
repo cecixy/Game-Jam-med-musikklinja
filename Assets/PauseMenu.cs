@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour {
 
     public static bool GameIsPaused = false;
 
+    public AudioSource missionFailedSound;
+
     public GameObject PauseMenuUi;
 	
 	void Update ()
@@ -47,6 +49,14 @@ public class PauseMenu : MonoBehaviour {
 
     public void QuitGame()
     {
+        Debug.Log("Mission Failed....");
+        StartCoroutine(MissionFailed());
+        missionFailedSound.Play();
+    }
+
+    IEnumerator MissionFailed()
+    {
+        yield return new WaitForSeconds(3);
         Debug.Log("YOU JUST QUIT THE GAME!");
         Application.Quit();
     }
