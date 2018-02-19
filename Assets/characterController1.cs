@@ -16,6 +16,8 @@ public class characterController1 : MonoBehaviour
 		rb = GetComponent<Rigidbody> (); 
     }
 
+
+
     void FixedUpdate()
     {
         PerformMovement();
